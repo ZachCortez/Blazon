@@ -1,27 +1,28 @@
 import React from 'react'
+import "tailwindcss/tailwind.css"
 import Image from 'next/image';
 import {
     BellIcon,
     ChatIcon,
-    CheveronDownIcon,
     HomeIcon,
     UserGroupIcon,
     ViewGridIcon,
 } from "@heroicons/react/solid";
 import {
     FlagIcon,
+    ChevronDownIcon,
     PlayIcon,
     SearchIcon,
     ShoppingCartIcon,
 } from "@heroicons/react/outline";
 import HeaderIcon from "./HeaderIcon";
 
+
 function Header() {
     return (
         <div className='sticky top-0 z-50 bg-white flex
         items-center p-2 lg:px-5 shadow-md'>
         {/* LEFT */}
-        
         <div className="flex items-center">
             <Image
             src="https://links.papareact.com/5me"
@@ -56,12 +57,12 @@ function Header() {
         {/* RIGHT */}
         <div className="flex items-center sm:space-x-2 justify-end">
             {/* ProfilePic */}
-
-            <p className='whitespace-nowrap font-seibold pr-3'>Zach Cortez</p>
+            {/* will replace line 60 with Users ID */}
+            <p className='whitespace-nowrap font-seibold pr-3'>Zach Cortez</p> 
             <ViewGridIcon className='icon' />
             <ChatIcon className='icon' />
             <BellIcon className='icon' />
-            <CheveronDownIcon className='icon' />
+            <ChevronDownIcon className='icon' />
         </div>
         </div>
     )
